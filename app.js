@@ -21,7 +21,7 @@ app.use('/api/booking', bookingRoom)
 
 
 console.log('starting server...')
-const SERVER_PORT = 5000
-app.listen(SERVER_PORT, () => { console.log(`server is running on port ${SERVER_PORT}.`)})
+const port = process.env.PORT || 5000;
+app.listen(port, () => { console.log(`server is running on port ${port}.`)})
 
 module.exports = app;
