@@ -33,9 +33,9 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use(helmet())
 
-app.get("/", (req, res) => {
-    res.send({ message: "Welcome to xinovac API!" })
-  })
+//app.get("/", (req, res) => {
+    //res.send({ message: "Welcome to xinovac API!" })
+  //})
 
 //ROUTES
 const bookingRoom = require("./routes/bookingRoute")
