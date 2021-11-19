@@ -7,7 +7,7 @@ const helmet = require('helmet')
 const app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.use(cors({credentials: true, origin: ['https://xinovac.herokuapp.com/', '*']}))
+app.use(cors({credentials: true, origin: ['http://localhost:3000/', 'https://xinovac.herokuapp.com/', '*']}))
 
 app.use(express.json()) 
 app.use(express.urlencoded({ extended: false }))
